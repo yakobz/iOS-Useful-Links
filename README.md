@@ -15,3 +15,16 @@ pmd cpd --files ${EXECUTABLE_NAME} --minimum-tokens 50 --language swift --encodi
 php ./cpd_script.php -cpd-xml cpd-output.xml
 ```
 This script uses pmd. Installing via [Homebrew](http://brew.sh/): `brew install pmd`
+
+## [Searching unused swift functions](https://github.com/PaulTaykalo/swift-scripts)
+Add [unused.rb](https://github.com/yakobz/iOS-Useful-Links/blob/master/unused.rb) file to your project, and add this run script:
+```
+file="unused.rb"
+if [ -f "$file" ]
+then
+echo "$file found."
+ruby unused.rb xcode
+else
+echo "unused.rb doesn't exist"
+fi
+```
