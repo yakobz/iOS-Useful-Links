@@ -47,7 +47,7 @@ class Item
   end  
 
   def to_xcode 
-    "#{full_file_path}:#{@at}:0: error: #{@type.to_s} #{@name.to_s} is unused"
+    "#{full_file_path}:#{@at}:0: warning: #{@type.to_s} #{@name.to_s} is unused"
   end
 
 
