@@ -7,7 +7,7 @@ A tool to enforce Swift style and conventions, loosely based on [GitHub's Swift 
 SwiftGen is a tool to auto-generate Swift code for resources of your projects, to make them type-safe to use.
 
 ### [Copy-Paste-Detector](https://medium.com/@nvashanin/%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC-copy-paste-detector-%D0%B4%D0%BB%D1%8F-swift-%D0%B2-xcode-9ae87c20748)
-Add cpd_script.php file to your project, and add this run script:
+Add [cpd_script.php](https://github.com/yakobz/iOS-Useful-Links/blob/master/cpd_script.php) file to your project, and add this run script:
 ```
 # Running CPD
 pmd cpd --files ${EXECUTABLE_NAME} --minimum-tokens 50 --language swift --encoding UTF-8 --format net.sourceforge.pmd.cpd.XMLRenderer > cpd-output.xml --failOnViolation true
