@@ -14,3 +14,4 @@ pmd cpd --files ${EXECUTABLE_NAME} --minimum-tokens 50 --language swift --encodi
 # Running script
 php ./cpd_script.php -cpd-xml cpd-output.xml
 ```
+This script uses pmd. Installing via [Homebrew](http://brew.sh/): `brew install pmd`
